@@ -1,0 +1,24 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* COMMON */
+
+/* HEADER */
+
+/* MAIN */
+.main_container {
+    /* debug */
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100%/3);
+}
+/* FOOTER */
