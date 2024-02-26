@@ -19,9 +19,6 @@ body {
 
 /* MAIN */
 .container {
-    /* debug */
-    background-color: aqua;
-
     margin: 0 auto;
     width: 80%;
     max-width: 1100px;
@@ -36,7 +33,7 @@ body {
     width: calc(100%/3);
     padding: 15px;
     position: relative;
-    /* margin-bottom: 100px; */
+    
 }
 
 /* IMG HOVER */
@@ -59,16 +56,60 @@ body {
     z-index: 2;
 }
 
-/* DESCRIPTION TEXT */
-.card_text {
-    /* display: flex;
-    flex-direction: column; */
-    margin-top: 490px;
-
+.card:hover .heart {
+    color: orange;
 }
 
+/* DESCRIPTION TEXT */
+.card_text {
+    margin-top: 490px;
+}
+
+.dis_price,
 .item_name {
     font-weight: 800;
+}
+
+.dis_price {
+    color: red;
+}
+
+.lthr_price {
+    text-decoration: line-through;
+}
+
+/* HEART POSITION */
+.heart {
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    width: 50px;
+    text-align: center;
+    font-size: 2rem;
+    z-index: 5;
+    background-color: white;
+    border-radius: 20px 0 0 20px;
+    display: inline-block;
+}
+
+.pop_style {
+    padding: 5px;
+    color: white;
+    font-weight: 800;
+    font-size: 0.9rem;
+    position: absolute; 
+    display: inline-block;
+    bottom: 150px;
+    z-index: 5;
+}
+
+.dis_perc {
+    background-color: orange;
+}
+
+.sustain  {
+    background-color: green;
+    left: 65px;
 }
 
 /* FOOTER */
