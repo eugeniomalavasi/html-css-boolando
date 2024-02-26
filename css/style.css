@@ -30,7 +30,27 @@ img {
 
 .card {
     width: calc(100%/3);
+    padding: 15px;
 }
 
+/* IMG HOVER */
+.card>.img_box {
+    position: relative;
+}
+
+.img_hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.main_img {
+    position: absolute;
+    z-index: 1;
+}
+
+.card:hover .img_hover {
+    z-index: 2;
+}
 
 /* FOOTER */
