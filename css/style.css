@@ -11,6 +11,10 @@ img {
 
 /* COMMON */
 
+body {
+    
+    font-family: "Quicksand", sans-serif;
+
 /* HEADER */
 
 /* MAIN */
@@ -31,6 +35,8 @@ img {
 .card {
     width: calc(100%/3);
     padding: 15px;
+    position: relative;
+    /* margin-bottom: 100px; */
 }
 
 /* IMG HOVER */
@@ -51,6 +57,18 @@ img {
 
 .card:hover .img_hover {
     z-index: 2;
+}
+
+/* DESCRIPTION TEXT */
+.card_text {
+    /* display: flex;
+    flex-direction: column; */
+    margin-top: 490px;
+
+}
+
+.item_name {
+    font-weight: 800;
 }
 
 /* FOOTER */
