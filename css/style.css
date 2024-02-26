@@ -31,6 +31,7 @@ header {
     z-index: 9999;
     height: 70px;
     width: 100%;
+    box-shadow: 5px 5px 5px rgba(113, 113, 113, 0.769);
 }
 
 .menu {
@@ -73,8 +74,9 @@ header {
 }
 
 main {
-    padding-top: 35px;
+    padding-top: 125px;
 }
+
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -84,7 +86,6 @@ main {
     width: calc(100%/3);
     padding: 15px;
     position: relative;
-    
 }
 
 /* IMG HOVER */
@@ -96,15 +97,18 @@ main {
     position: absolute;
     left: 0;
     top: 0;
+    border-radius: 5px;
 }
 
 .main_img {
     position: absolute;
     z-index: 1;
+    border-radius: 5px;
 }
 
 .card:hover .img_hover {
     z-index: 2;
+    box-shadow: 5px 10px 18px var(--orange);
 }
 
 .card:hover .heart {
@@ -164,3 +168,29 @@ main {
 }
 
 /* FOOTER */
+footer {
+    background-color: #1A1A1A;
+    margin-top: 30px;
+}
+
+.info_footer {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+.legal_info,
+.social_info {
+    display: flex;
+    gap: 10px;
+}
+
+li a {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.footer_title {
+    font-weight: 800;
+}
